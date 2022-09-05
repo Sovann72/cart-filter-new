@@ -36,11 +36,20 @@ export const Container = (props) => {
     isSelected: false,
   }]
 
+
+  
+  
+  const [Items, setItems] = useState(ItemList);
+
   const getItem = (item) => {
+
+
+    
+    // console.log("from container: item",selectItem)
     const temItems = Items.map(obj => {
       // 👇️ if id equals 2, update country property
       if (obj.id === item.id) {
-        console.log();
+  
         return {
           name: item.name,
           id: item.id,
@@ -53,9 +62,8 @@ export const Container = (props) => {
     setItems(temItems);
   }
 
-  
-  
-  const [Items, setItems] = useState(ItemList);
+  console.log("item", Items)
+
 
   return <div className='mt-5 mx-auto grid grid-cols-1 gap-24'>
     <CardWrapper itemList={Items} onClick={getItem}/>

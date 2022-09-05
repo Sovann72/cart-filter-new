@@ -4,9 +4,8 @@ export const Card = (props) => {
   const [item, setItem] = useState(props.itemcard)
 
   const {isSelected} = item;
-  // console.log(item);
+  console.log(isSelected);
   const handleClick = () => {
-    console.log(isSelected);
     setItem((something) => ({...something, isSelected: !isSelected}));
     props.onClick(item);
   }

@@ -2,7 +2,7 @@
 import { Cart } from './Cart'
 
 export const CartWrapper = (props) => {
-  console.log('from CardWrapper: itemList', props.itemList);
+  console.log('from cartwrapper: itemList', props.itemList);
   let Items = props.itemList
   return (
   <div className="border w-5/6 h-1/2 mx-auto grid gap-5 xl:grid-cols-5 
