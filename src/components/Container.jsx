@@ -62,10 +62,7 @@ export const Container = (props) => {
     setItems(temItems);
   }
 
-  console.log("item", Items)
-
-
-  return <div className='mt-5 mx-auto grid grid-cols-1 gap-24'>
+  return <div className='mt-5 mx-auto grid grid-cols-1 grid-rows-2 gap-24'>
     <CardWrapper itemList={Items} onClick={getItem}/>
     <CartWrapper itemList={Items}/>
   </div>

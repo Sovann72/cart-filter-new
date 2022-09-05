@@ -1,13 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Card = (props) => {
   const [item, setItem] = useState(props.itemcard)
 
   const {isSelected} = item;
-  console.log(isSelected);
+  useEffect(() => {
+    console.log("isSelected is ",isSelected);
+    props.onClick(item);
+  }, [item]);
   const handleClick = () => {
     setItem((something) => ({...something, isSelected: !isSelected}));
-    props.onClick(item);
+    
+    console.log('item is', item);
   }
   return (
     <div
