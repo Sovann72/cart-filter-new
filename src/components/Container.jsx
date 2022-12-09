@@ -6,35 +6,30 @@ import { CartWrapper } from './CartWrapper'
 export const Container = (props) => {
   const [childArr, setChildArr] = useState([]);
   const ItemList = [{
-    name: 'sovann',
+    name: 'League',
     id: 0,
     isSelected: false,
   },
   {
-    name: 'punleur',
+    name: 'DotA',
     id: 1,
     isSelected: false,
   },
   {
-    name: 'pisal',
+    name: 'Vainglory',
     id: 2, 
     isSelected: false,
   },
   {
-    name: 'rith',
+    name: 'Over Watch',
     id: 3,
     isSelected: false,
   },
   {
-    name: 'nak',
+    name: 'Counter Strike',
     id: 4,
     isSelected: false,
-  },
-  {
-    name: 'cheang',
-    id: 5,
-    isSelected: false,
-  }]
+  },]
 
 
   
